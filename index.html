@@ -6,39 +6,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <script>
+    $( function() {
+      $( "#slider" ).slider();
+    } );
+    </script>
+
+    
 </head>
 <body>
+
+
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
-    <nav class="navbar">
-    <div class="max-width">
-    <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
-    <ul class="menu">
-        <li><a href="#home">Anasayfa</a></li>
-        <li><a href="#about">Hakkımda</a></li>
-        <li><a href="#skills">Yeteneklerim</a></li>
-        <li><a href="#contact">iletişim</a></li>
-    </ul>
-    <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-    </div>
-    </div>
-    </nav>
-    <!--Anasayfa section başlangıcı-->
-    <section class="home" id="home">
+    <nav  class="navbar">
         <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Merhaba,ben</div>
-                <div class="text-2">Ebru </div>
-                <div class="text-3">Ve <span>Yazılım Mühendisi </span> </div>
-                <a href="#">İşte Ben</a>
-            </div>
+        <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+        <ul class="menu">
+            <li><a href="#home">Anasayfa</a></li>
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#skills">Yeteneklerim</a></li>
+            <li><a href="#contact">iletişim</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
         </div>
-    </section>
+        </div>
+        </nav>
+      
+    <nav  class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div style="position:fixed; top:0px" class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Hakkımda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Yetenekler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">İletişim</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+
+</div>
+
+    <!--Anasayfa section başlangıcı-->
+    
+<main>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" width="%100" height="200">
+          <div class="carousel-item active">
+            <img src="images/uzay1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/uzay2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/uzay3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    
+       
     <!--about section start-->
     <section class="about" id="about">
         <div class="max-width">
@@ -161,6 +218,7 @@
             </div>
             </div>
         </div>
+    
     </section>
 
     <!--footer section -->
@@ -169,5 +227,10 @@
     </footer>
 </section>
     <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </body>
 </html>
